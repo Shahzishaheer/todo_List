@@ -1,0 +1,229 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+  margin-top: -19px;
+  background-color: gray;
+  /* border: 3px black solid; */
+  
+
+}
+
+body {
+  
+    /* Create a linear gradient with three colors */
+    background: linear-gradient(to bottom, white, #0AB6AB, black);
+   
+    width: 100%;
+    height: 100px; 
+    
+
+  
+} 
+
+h1{
+  /* font-family: 'Dancing Script', cursive; */
+  font-family:'Times New Roman', Times, serif;
+  
+  /* background: linear-gradient(80deg, red, gold);
+  background-clip: text;
+  color: transparent;
+  line-height: 2px; */
+  color: black;
+
+}
+
+.addbtn {
+  position: relative;
+  bottom: 30px;
+  left: 85px; /* Updated to a valid unit */
+    font-weight: bold;
+
+}
+
+@media screen and (max-width: 400px) {
+  .addbtn {
+    font-size: 1rem;
+    top: -25px;
+    left: 50px;
+  }
+}
+
+.addbtn:hover {
+  cursor: pointer;
+  color: red;
+}
+
+.container .list-group {
+  position: relative;
+}
+
+.deletebtn {
+  
+  z-index: 4; /* Updated to a valid integer value */
+  font-size: 1rem;
+  bottom: 15px;
+  left: 172px;
+
+}
+
+.deletebtn:hover {
+  cursor: pointer;
+  color: red !important;
+}
+
+@media screen and (max-width: 400px) {
+  .deletebtn {
+    font-size: 0.8rem;
+    top: 5px;
+    right: 15px;
+  }
+}
+
+
+
+.donebtn
+{
+  z-index: 4; 
+  font-size: 3rem;
+  font-weight: bold;
+  bottom: 15px;
+  left: 145px;
+  color: black;
+}
+.donebtn:hover {
+  cursor: pointer;
+  color: green !important;
+  font-weight: bold;
+}
+.list-group-item.active {
+  cursor: pointer;
+  background-color:#0AB6AB;
+  border-color: white;
+  color: white;
+  /* height: auto; */
+  
+}
+
+
+.list-group-item.active:hover {
+  cursor: pointer;
+  color:black;
+  border-color: white;
+  background-color:pink;
+  height: auto;
+  
+}
+
+.btn1 {
+  background-color: #0AB6AB;
+  color: darkblue;
+  font-weight: bold;
+}
+
+.btn1:hover {
+  cursor: pointer;
+  background-color: rgb(17, 219, 255) !important;
+  color: white ;
+}
+
+.logo {
+  height: 7em;
+  padding: 1.5em;
+}
+
+.form-control {
+  .form-control {
+    width: 100%; /* Use percentage for responsiveness */
+    max-width: 300px; /* Set a maximum width if needed */
+    padding: 0.5em; /* Adjust padding as needed */
+    box-sizing: border-box; /* Include padding and border in the width */
+    border: 1px solid #ccc; /* Add a border for visual clarity */
+    border-radius: 4px; /* Add border radius for a more modern look */
+  }
+}
+.task-name {
+  text-align: start;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  max-width: 70%; 
+}
+.task-name:hover
+{
+  cursor: pointer;
+ 
+}
+@media screen and (max-width: 400px) {
+  .form-control {
+    width: 90%; 
+  }
+  .task-name {
+    width: 200px; 
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #300cb4;
+}.form-control {
+  width: 100%; /* Use percentage for responsiveness */
+  max-width: 300px; /* Set a maximum width if needed */
+}
+ 
+ .deletebtn,.donebtn {
+  position: absolute;
+  font-size: 1rem;
+}
+
+@media screen and (max-width: 400px) {
+  .addbtn, .deletebtn, .donebtn {
+    font-size: 0.8rem;
+    position: static; /* Adjust positioning for smaller screens */
+    margin-top: 10px; /* Example adjustment for vertical positioning */
+
+  }
+} 
+
+.form-check
+{
+  display:inline-block;
+  padding-left: 2.2em;
+}
+
+
+.completed-task .task-name {
+  text-decoration: line-through red;
+}
+
+/* Date picker css */
+
+/* Adjust size of the calendar */
+/* Adjust size of the calendar */
+.react-datepicker {
+  font-family: Arial, sans-serif;
+  font-size: 14px; 
+  border: 1px solid #300cb4;
+  width: 232px; 
+  background-color: white;
+  
+}
+.react-datepicker__header 
+{
+  
+  width: 230px; 
+  background-color: rgb(15, 178, 219);
+  font-weight: bold;
+}
+
+.react-datepicker-popper {
+  margin-bottom: 10px; 
+  z-index: 5;
+}
+.react-datepicker__month-container .react-datepicker__week {
+  max-height: 90px; /* Adjust max-height as needed */
+}
